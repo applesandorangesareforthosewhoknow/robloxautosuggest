@@ -1,0 +1,231 @@
+{
+  "globals": [
+    "game",
+    "workspace",
+    "Players",
+    "Lighting",
+    "ReplicatedStorage",
+    "ServerStorage",
+    "ServerScriptService",
+    "StarterGui",
+    "StarterPack",
+    "StarterPlayer",
+    "SoundService",
+    "Teams",
+    "TweenService",
+    "UserInputService",
+    "PathfindingService",
+    "Debris",
+    "RunService",
+    "HttpService",
+    "TeleportService",
+    "TextService",
+    "GuiService",
+    "CollectionService",
+    "ContextActionService",
+    "CoreGui",
+    "CorePackages",
+    "LocalizationService",
+    "LogService",
+    "MarketplaceService",
+    "MemoryStoreService",
+    "MessagingService",
+    "PhysicsService",
+    "PolicyService",
+    "ProximityPromptService",
+    "ReplicatedFirst",
+    "ScriptContext",
+    "TextChatService",
+    "VRService",
+    "VirtualUser",
+    "VoiceChatService",
+    "Task",
+    "StarterPlayerScripts",
+    "StarterCharacterScripts",
+    "LocalizationProvider",
+    "UserSettings",
+    "UserGameSettings",
+    "NetworkClient",
+    "NetworkServer"
+  ],
+  "classes": {
+    "Instance": {
+      "methods": ["new", "IsA", "FindFirstChild", "FindFirstAncestor", "Destroy", "GetChildren", "WaitForChild", "Clone", "SetAttribute", "GetAttribute", "ClearAllChildren", "FindFirstChildWhichIsA"],
+      "properties": ["Name", "Parent", "ClassName", "Archivable"]
+    },
+    "Task": {
+      "methods": [
+        "Wait",
+        "Spawn",
+        "Desynchronize",
+        "Defer",
+        "Cancel",
+        "CancelWait",
+        "CancelAll",
+        "CancelAllExcept",
+        "Pause",
+        "Resume"
+      ],
+      "properties": []
+    },
+    "Part": {
+      "methods": ["CanCollide", "Destroy", "GetTouchingParts", "GetChildren", "BreakJoints", "IsDescendantOf"],
+      "properties": ["Anchored", "Position", "Size", "Transparency", "Material", "BrickColor", "Color", "Locked", "Reflectance", "Shape"]
+    },
+    "Vector3": {
+      "methods": ["new", "Dot", "Cross", "Lerp", "Magnitude", "Unit", "FromNormalId", "Distance", "ToOrientation", "ToEulerAnglesXYZ"],
+      "properties": []
+    },
+    "CFrame": {
+      "methods": ["new", "LookAt", "Angle", "Lerp", "ToWorldSpace", "FromEulerAnglesXYZ", "FromEulerAnglesYXZ", "Inverse", "components"],
+      "properties": []
+    },
+    "Players": {
+      "methods": ["GetPlayerFromCharacter", "GetPlayers", "GetUserIdFromNameAsync", "GetHumanoidDescriptionFromUserId", "GetPlayerByUserId"],
+      "properties": []
+    },
+    "Humanoid": {
+      "methods": ["TakeDamage", "MoveTo", "ChangeState", "SetStateEnabled", "LoadAnimation", "Destroy", "ApplyDescription", "GetPlayingAnimationTracks", "SetRigType"],
+      "properties": ["Health", "MaxHealth", "WalkSpeed", "JumpPower", "DisplayDistanceType", "PlatformStand", "Sit", "NameDisplayDistance"]
+    },
+    "Tool": {
+      "methods": ["Equip", "Unequip", "Activate", "Deactivate", "CanBeDropped"],
+      "properties": ["Parent", "GripPos", "RequiresHandle", "Enabled"]
+    },
+    "Sound": {
+      "methods": ["Play", "Stop", "Pause", "Resume", "Destroy", "AdjustVolume"],
+      "properties": ["Volume", "Pitch", "TimePosition", "Looped", "Playing", "SoundId"]
+    },
+    "Camera": {
+      "methods": ["GetRenderCFrame", "GetFocus"],
+      "properties": ["CameraType", "FieldOfView", "CFrame", "Focus", "CameraSubject"]
+    },
+    "RemoteEvent": {
+      "methods": ["FireServer", "FireAllClients", "OnServerEvent", "OnClientEvent"],
+      "properties": []
+    },
+    "RemoteFunction": {
+      "methods": ["InvokeServer", "InvokeClient", "OnServerInvoke", "OnClientInvoke"],
+      "properties": []
+    },
+    "Ray": {
+      "methods": ["new", "Unit"],
+      "properties": ["Origin", "Direction"]
+    },
+    "Region3": {
+      "methods": ["new", "Union", "Intersect"],
+      "properties": ["Min", "Max"]
+    },
+    "TweenInfo": {
+      "methods": ["new"],
+      "properties": []
+    },
+    "Enum": {
+      "methods": [],
+      "properties": ["AnimationPriority", "BlendDirection", "CameraType", "CollisionGroup", "DeveloperProductPurchaseResult", "DockWidgetPluginGuiInfo", "GuiInset", "KeyCode", "MouseButton1", "MouseButton2", "MouseButton3", "MouseMovementMode", "PhysicalProperties", "Platform", "PlaybackState", "RaycastFilterType", "RenderPriority", "R15CompatibilityMode", "RobloxLocking", "SelectionMode", "SurfaceType", "TeleportResult", "TouchInputPriority", "UserInputType", "UserInputState", "VideoFrameContentProvider", "WalkDirectionMode", "WorkspaceState", "ZIndexBehavior"]
+    }
+  },
+  "functions": [
+    "print",
+    "wait",
+    "warn",
+    "typeof",
+    "pairs",
+    "ipairs",
+    "spawn",
+    "delay",
+    "pcall",
+    "xpcall",
+    "require",
+    "assert",
+    "error",
+    "setmetatable",
+    "getmetatable",
+    "tick",
+    "os.time",
+    "os.date",
+    "os.clock",
+    "math.random",
+    "math.floor",
+    "math.ceil",
+    "math.abs",
+    "math.sqrt",
+    "math.sin",
+    "math.cos",
+    "math.tan",
+    "math.asin",
+    "math.acos",
+    "math.atan",
+    "math.atan2",
+    "math.exp",
+    "math.log",
+    "math.max",
+    "math.min",
+    "table.insert",
+    "table.remove",
+    "table.sort",
+    "table.concat",
+    "string.format",
+    "string.gsub",
+    "string.match",
+    "string.sub",
+    "string.len",
+    "string.upper",
+    "string.lower",
+    "coroutine.wrap",
+    "coroutine.yield",
+    "coroutine.create",
+    "coroutine.resume",
+    "loadstring",
+    "load",
+    "collectgarbage",
+    "newproxy",
+    "next",
+    "pairs",
+    "pcall",
+    "rawequal",
+    "rawget",
+    "rawlen",
+    "rawset",
+    "select",
+    "setfenv",
+    "setmetatable",
+    "tonumber",
+    "tostring",
+    "type",
+    "xpcall"
+  ],
+  "services": [
+    "game:GetService(\"Players\")",
+    "game:GetService(\"Workspace\")",
+    "game:GetService(\"Lighting\")",
+    "game:GetService(\"ReplicatedStorage\")",
+    "game:GetService(\"ServerStorage\")",
+    "game:GetService(\"ServerScriptService\")",
+    "game:GetService(\"SoundService\")",
+    "game:GetService(\"Teams\")",
+    "game:GetService(\"TweenService\")",
+    "game:GetService(\"UserInputService\")",
+    "game:GetService(\"PathfindingService\")",
+    "game:GetService(\"RunService\")",
+    "game:GetService(\"HttpService\")",
+    "game:GetService(\"TeleportService\")",
+    "game:GetService(\"TextService\")",
+    "game:GetService(\"GuiService\")",
+    "game:GetService(\"CollectionService\")",
+    "game:GetService(\"ContextActionService\")",
+    "game:GetService(\"MarketplaceService\")",
+    "game:GetService(\"PhysicsService\")",
+    "game:GetService(\"ProximityPromptService\")",
+    "game:GetService(\"TextChatService\")",
+    "game:GetService(\"VRService\")",
+    "game:GetService(\"VoiceChatService\")",
+    "game:GetService(\"LocalizationService\")",
+    "game:GetService(\"LogService\")",
+    "game:GetService(\"MemoryStoreService\")",
+    "game:GetService(\"MessagingService\")",
+    "game:GetService(\"CoreGui\")",
+    "game:GetService(\"CorePackages\")",
+    "game:GetService(\"ScriptContext\")"
+  ]
+}
